@@ -1,0 +1,192 @@
+.topView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.callCont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  right: 10%;
+  top: 30%;
+  position: absolute;
+}
+
+.flashAidLogo {
+  width: 200px;
+  height: 50px;
+  margin-right: 10px;
+  /* background-color: rgba(0, 0, 0, 0.701); */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+.flashAidLogo2 {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+.line {
+  width: 100%;
+  border: none;
+  border-top: 5px solid #c6c8ca;
+  margin-top: 100px;
+}
+
+.image {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.logoHeading {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.logoHeading span {
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.aid {
+  color: #ff8f00;
+}
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 8.5%;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 5%;
+  background-color: white;
+  z-index: 9999;
+}
+.navItems {
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+}
+.navItems b {
+  color: blue;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 5px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.navItems b:hover {
+  background-color: #f0f0f0; /* Change this to the desired hover background color */
+  color: #000; /* Change this to the desired hover text color */
+}
+
+.navItems b.active {
+  background-color: #007bff; /* Change this to the desired active background color */
+  color: #fff; /* Change this to the desired active text color */
+}
+
+.callUsMobile {
+  display: flex;
+  gap: 3px;
+  text-decoration: none;
+}
+.callUsDesktop {
+  display: flex;
+  gap: 3px;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+.logoutDesktop {
+  color: blue;
+  cursor: pointer;
+}
+.login {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+@media (max-width: 750px) {
+  .callCont {
+    font-size: 10px;
+  }
+  .image {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .image {
+    /* top: 0;
+    width: 75px;
+    height: 75px; */
+    display: none;
+  }
+  .line {
+    margin-top: 100px;
+    border-top: 2px solid black;
+  }
+  .logoHeading {
+    left: 5%;
+  }
+  .backdrop {
+    display: flex;
+    flex-direction: column;
+  }
+  .flashAidLogo {
+    margin: 0;
+    width: 120px;
+    height: 25px;
+    margin-right: 5px;
+  }
+  .flashAidLogo2 {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 10px;
+  }
+  .callCont {
+    flex-direction: column;
+    right: 0;
+    top: 50%;
+  }
+  .logoutDesktop {
+    display: none;
+  }
+  .navItems {
+    margin-right: 5px;
+  }
+  .navItems b {
+    padding: 3px;
+  }
+  .backDropItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  /* .callUsDesktop {
+    display: none;
+  } */
+}
+
+@media (max-width: 1300px) {
+  .image {
+    display: none;
+  }
+}
